@@ -1,0 +1,183 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+#name-prof{
+  font-size: 4em;
+}
+.page-head {
+  background-color: transparent;
+  z-index: 1;
+  position: fixed;
+  color: white;
+  margin-top: 0;
+}
+.navbar-header, .navbar-header.selected {
+  color: white;
+}
+.navbar-header.selected {
+  text-decoration: underline orange;
+  text-underline-position: under;
+}
+.navbar-header:hover {
+  text-decoration: underline blue;
+  text-underline-position: under;
+  color: white;
+}
+.page-body {
+  margin: 0;
+  display: block;
+}
+
+#section1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/home/img1.jpg);
+}
+#section1 .interactive-scroll-image-1{
+  left: 38%;
+}
+.horiz-box {
+  display: flex;
+  flex-direction: row;
+}
+.horiz-box .box-holdingbox{
+	flex: 0 1 30%;
+}
+#services .box-holdingbox {
+  margin-left: 1%;
+  margin-right: 1%;
+  padding: 1%;
+  margin-bottom: 4%;
+}
+#services .box-holdingbox h1 {
+  text-align: center;
+  text-decoration: underline orange;
+  text-underline-position: under;
+}
+.part > h1 {
+  font-weight: bolder;
+  text-align: center;
+}
+#services .box-holdingbox h2 {
+  text-align: justify-all;
+  font-weight: light;
+}
+#services .box-holdingbox:hover {
+  border-radius: 5%;
+  background-color: #EEEEEE;
+  box-shadow: gray 2px 2px 2px 2px;
+}
+#section2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/home/img2.png);
+
+}
+#section2 .interactive-scroll-image-1{
+  left: 30%;
+  top: 30%;
+}
+
+#up-button:hover {
+  background-color: rgba(50, 50, 50, 0.7);
+}
+#projects .box-holdingbox {
+	border: 3px ridge transparent;
+  text-align: justify-all;
+  margin: 2%;
+  margin-bottom: 1%;
+  padding: 1%;
+}
+#projects .box-holdingbox h1 {
+  text-align: center;
+}
+#projects .box-holdingbox:hover {
+  border: ridge 3px gainsboro;
+  cursor: pointer;
+}
+#projects .box-holdingbox:active{
+	border: ridge 3px gainsboro;
+	background-color: lightgray;
+}
+#projects .box-holdingbox h3{
+	text-align: center;
+	color: orange;
+}
+#see-all,#see-all-about-me{
+	text-decoration: none;
+	color: black;
+	font-size: 1.7em;
+	display: block;
+	text-align: center;
+	margin-bottom: 5%;
+}
+#see-all:hover,#see-all-about-me:hover{
+	color: orange;
+}
+#see-all:active,#see-all-about-me:active{
+	color: red;
+}
+#see-all-about-me{
+  color: black;
+  margin-top: 0;
+}
+#section3{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/home/img3.jpg);
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+#section3 .interactive-scroll-image-1{
+	top: 3%;
+	left: 35%;
+}
+.required::after{
+	content: "*";
+	color: red;
+}
+.required+input:focus{
+	border-bottom: solid 2px red;
+  outline: none;
+}
+.form-group{
+	margin: 2%;
+}
+#section3 textarea{
+	resize: none;
+}
+#section3 button[type="submit"]{
+  background-color: orange;
+  border-radius: 10%/20%;
+  color: white;
+  width: 30%;
+  font-size: 1.2em;
+  height: 40px;
+  border: none;
+}
+#section3 button[type="submit"]:hover{
+  background-color: #e0a800;
+  cursor: pointer;
+}
+input[invalid]{
+  border-bottom: solid 2px red;
+  outline: none;
+}
+input.text-input{
+  outline: none;
+  height: 30px;
+  border: none;
+  font-size: 1.2em;
+  background-color: transparent;
+  color: white;
+  border-bottom: white solid 2px;
+}
+textarea{
+  margin-top: 2%;
+  outline: none;
+  border: none;
+  font-size: 1.2em;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+  color: white;
+  border: white solid 2px;
+}
+.required+textarea:focus{
+  border: solid 2px red;
+  outline: none;
+}

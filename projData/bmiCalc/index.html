@@ -1,0 +1,50 @@
+<!--
+input text box for height in feet
+input text box for height in inches
+input text box for weight
+button to click to calculate BMI that calls the function calcBMI()
+button to click to clear form that calls the function reset()
+An h3 to display the BMI 
+An h3 to display the category
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Vincent Hsiao</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script type="text/javascript" src="bmiCalc.js" async></script>
+</head>
+    <div class="form-grid-container">
+        <h1 class="form-title">BMI Calculator</h1>
+        <div class="form-grid-body">
+            <div class="form-textwidget-group">
+                <label class="form-text" for="heightF">Height (ft)</label>
+                <div class="text-on-back" back-text="ft">
+                    <input class="form-widget" id="heightF" maxlength="3">
+                </div>
+            </div>
+            <div class="form-textwidget-group">
+                <label class="form-text" for="heightI">Height (in)</label>
+                <div class="text-on-back" back-text="in">
+                    <input class="form-widget" id="heightI" maxlength="2">
+                </div>
+            </div>
+            <div class="form-textwidget-group">
+                <label class="form-text" for="weight">Weight</label>
+                <div class="text-on-back" back-text="lb">
+                    <input class="form-widget" id="weight" maxlength="3">
+                </div>
+            </div>
+            <div class="form-group-submitdual">
+                <button id="calculate" class="formButton">Calculate</button>
+                <button id="reset" class="formButton">Clear</button>
+            </div>
+        </div>
+    </div>
+    <div class="form-group-result">
+        <h3 class="form-result" id="bmiNo"></h3>
+        <h3 class="form-result" id="bmiResult"></h3>
+    </div>
+</body>
+</html>

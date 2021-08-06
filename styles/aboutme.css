@@ -1,0 +1,102 @@
+:root{
+	margin-left: 0;
+
+}
+.navbar-header{
+	color: white;
+}
+.page-body{
+	margin-left: 0;
+}
+.page-body *{
+	max-width:100%; 
+}
+#section1-parent{
+	height: 60vh;
+}
+#section1 h1,#section1 h2{
+	color: white;
+}
+#section1 .interactive-scroll-image-1{
+	left: 30%;
+}
+.cursive{
+	font-family: Lucida Handwriting, cursive, Arial, sans-serif;
+
+}
+#section1 .cursive{
+	color: blue;
+
+}
+#section1 .cursive:hover{
+	color: red;
+	cursor: pointer;
+}
+.half-half-size{
+	width: 50vw;
+	background-attachment: fixed;
+}
+.half-half{
+	display: flex;
+	flex-direction: row;
+	height: 70vh;
+	max-width:100%; 
+}
+#section1{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../assets/aboutme/header2.jpg);
+}
+#section2, #section2 > *{
+	height: 130vh;
+}
+#section2 .interactive-scroll-image-1{
+	left: 35%;
+}
+#section2 .interactive-scroll-image-1 h1,h2{
+	color: white;
+}
+#section2{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../assets/aboutme/sidebar2.jpg);
+}
+.text p{
+	margin-left: 3%;
+	margin-top: 3%;
+}
+.main-text{
+	padding-top: 3%;
+}
+.main-text p{
+	font-size: 1.4em;
+	padding: 2%;
+	font-family: Trebuchet MS, Verdana;
+}
+.social-button{
+	display: flex;
+	justify-content: center;
+}
+.social-button a{
+	margin: 7%;
+	display: block;
+	border-radius: 50%;
+}
+.social-button a img{
+	margin-left: auto;
+	margin-right: auto;
+}
+.github{
+
+	padding: 1%;
+	background: black;
+}
+.github:hover{
+	background: #555555;
+}
+.leetcode{
+	padding: 1%;
+	padding-top: 2%;
+	padding-left: 2%;
+	padding-right: 2%;
+	background: #FFE147;
+}
+.leetcode:hover{
+	background: #FFF347;
+}

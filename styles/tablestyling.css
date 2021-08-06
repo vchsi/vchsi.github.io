@@ -1,0 +1,49 @@
+/* Table Styling */
+:root{
+	--corner-round: 5%;
+}
+.table-content{
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: var(--corner-round);
+	font-size: 1.2em;
+	width: 100%;
+	height: 100%;
+	box-shadow: lightgray 1px 1px 1px 1px;
+	margin-top: 2%;
+}
+.table-content tbody td, .table-content tbody th, .table-content thead th{
+	text-align: left;
+}
+.table-content th,td{
+	padding: 15px;
+}
+.table-content tbody td{
+	padding: 15px;
+}
+.table-content thead{
+	background-color: rgb(51, 51, 51);
+}
+.table-content tbody tr:nth-child(odd){
+	background-color: #E1E1E1;
+}
+.table-content tbody tr:nth-child(even){
+	background-color: white;
+}
+table thead th:first-child  {
+    border-top-left-radius: var(--corner-round);
+}
+
+table thead th:last-child {
+    border-top-right-radius: var(--corner-round);
+}
+table tbody tr:last-child td:first-child {
+    border-bottom-left-radius: var(--corner-round);
+}
+
+table tbody tr:last-child td:last-child {
+    border-bottom-right-radius: var(--corner-round);
+}
+.table-content thead th{
+	color: #FFFFFF;
+}

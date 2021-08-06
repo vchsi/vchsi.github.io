@@ -1,0 +1,50 @@
+.navbar-header:hover{
+	text-decoration: underline blue;
+	text-underline-position: under;
+}
+.navbar-header.selected{
+	text-decoration: underline orange;
+	text-underline-position: under;
+}
+.navbar-dropdown{
+	display: inline-block;
+	position: relative;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+.navbar-dropdown .navbar-header:hover + .navbar-dropdown-content, .navbar-dropdown-content:hover{
+	visibility: visible;
+}
+.navbar-dropdown-content{
+	padding: 2%;
+	display: inherit;
+	position: absolute;
+	min-width: 200px;
+	background-color: lightgray;
+	top: 105%;
+	right: -65%;
+	visibility: hidden;
+	border-radius: 5%;
+	font-family: Courier New;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+.navbar-header{
+	display: inline;
+	padding: 1%;
+	margin: 1% 5%;
+	text-decoration: none;
+	font-size: 1.5em;
+	color: black;
+}
+.navbar-link{
+	display: block;
+	padding: 5%;
+	margin: 5%;
+	text-decoration: none;
+	color: black;
+	font-size: 1.2em;
+}
+.navbar-link:hover{
+	background-color: #EEEEEE;
+}
