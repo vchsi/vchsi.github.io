@@ -1,0 +1,175 @@
+:root{
+	--corner-round: 7px;
+	font-family: Helvetica, Arial, sans-serif;
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	--button-reg: rgb(0,145,255);
+	--button-hov: rgb(13, 108, 181);
+	background-color: #ffffff;
+}
+
+/* Store Content Grid */
+.store-title{
+	text-align: center;
+	flex: 0 1 20%;
+}
+.store-title-main{
+	font-size: 2.5em;
+	margin-top: 1%;
+	margin-bottom: 1px;
+	color: lightgreen;
+}
+.store-title-main:hover{
+	text-decoration: underline;
+}
+.store-title-secondary{
+	margin-top: 1px;
+	font-style: italic;
+	margin-bottom: 1px;
+}
+.store-content{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-template-rows: auto auto;
+	grid-template-areas: 
+	"orderform table table"
+	"invtot table table";
+	flex: 0 1 60%;
+}
+
+.store-products{
+	grid-area: table;
+}
+.store-order-form{
+	padding-left: 1%;
+	grid-area: orderform;
+}
+.store-order-invoice-total{
+	grid-area: invtot;
+}
+.store-order-receipt{
+	grid-area: receipt;
+	margin-top: 2%;
+	flex: 0 1 20%;
+}
+em{
+	margin: 0;
+	margin-bottom: 2%;
+	padding: 0;
+	font-size: 0.7em;
+	color: red;
+}
+#receipt{
+	width: 98%;
+	resize: none;
+	margin: 1%;
+	font-size: 1.2em;
+	font-family: Courier New, sans-serif;
+	background-color: #ededed;
+}
+.store-order-form-title{
+	font-size: 2em;
+	font-weight: lighter;
+	margin-bottom: 1px;
+}
+.text-group-label{
+	font-size: 1.4em;
+	padding-top: 1%;
+	margin-right: 4%;
+	margin-top: 2%;
+}
+/* Receipt */
+.text-group-input{
+	font-size: 1.2em;
+	font-family: Courier New;
+	padding: 1%;
+	margin-top: 1.5%;
+	border-radius: 5px;
+	outline: none;
+}
+.text-group-input:focus{
+	border: solid 2px blue;
+}
+.text-group-num-input{
+	width: 45px;
+}
+.button-group{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+.form-button{
+	margin-top: 2%;
+	background-color: var(--button-reg);
+	border-radius: 10px;
+	border: var(--button-reg) 5px solid;
+	color: white;
+	height: 50px;
+	padding: 1%;
+	margin-right: 2%;
+	font-size: 1.2em;
+
+}
+.form-button:hover{
+	background-color: var(--button-hov);
+	border: var(--button-hov) 5px solid;
+	cursor: pointer;
+}
+#add{
+	flex: 0 1 20%;
+}
+#new{
+	flex: 0 1 20%;
+	background-color: rgb(235, 204, 52);
+	border: rgb(235, 204, 52) 5px solid;
+}
+#new:hover{
+	background-color: rgb(196, 170, 43);
+	border: rgb(196, 170, 43) 5px solid;
+}
+/* Table Styling */
+.table-content{
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: var(--corner-round);
+	font-size: 0.9em;
+	width: 100%;
+	height: 100%;
+	box-shadow: lightgray 1px 1px 1px 1px;
+}
+.table-content tbody td, .table-content tbody th, .table-content thead th{
+	text-align: left;
+}
+.table-content th,td{
+	padding: 15px;
+}
+.table-content tbody td{
+	padding: 5px;
+}
+.table-content thead{
+	background-color: rgb(51, 51, 51);
+}
+.table-content tbody tr:nth-child(odd){
+	background-color: #E1E1E1;
+}
+.table-content tbody tr:nth-child(even){
+	background-color: white;
+}
+table thead th:first-child  {
+    border-top-left-radius: var(--corner-round);
+}
+
+table thead th:last-child {
+    border-top-right-radius: var(--corner-round);
+}
+table tbody tr:last-child td:first-child {
+    border-bottom-left-radius: var(--corner-round);
+}
+
+table tbody tr:last-child td:last-child {
+    border-bottom-right-radius: var(--corner-round);
+}
+.table-content thead th{
+	color: #FFFFFF;
+}

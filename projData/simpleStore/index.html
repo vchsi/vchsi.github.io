@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<script type="text/javascript" src="script.js"></script>
+		<title>PC Superstore</title>
+	</head>
+	<body>
+		<div class="store-title">
+			<h1 class="store-title-main">PC Superstore</h1>
+			<blockquote class="store-title-secondary">The place for everything electronics</blockquote>
+			<em>(Limit 10000 per item)</em>
+		</div>
+		<div class="store-content">
+			<div class="store-order-form">
+				<h2 class="store-order-form-title">Add item to the Cart</h2>
+				<em>(case and space sensitive)</em>
+		<!--	<div class="input-text-group">
+					<label for="prodId" class="text-group-label">Product Id:</label>
+					<input class="text-group-input text-group-num-input" id="prodId" type="number" min="1">
+				</div> or -->
+				<div class="input-text-group">
+					<label for="prodName" class="text-group-label">Product Name:</label>
+					<input class="text-group-input" id="prodName">
+				</div>
+				<div class="input-text-group">
+					<label for="quant" class="text-group-label">Quantity:</label>
+					<input class="text-group-input text-group-num-input" id="quant" type="number" min="1" max="10000">
+				</div>
+				<div class="button-group">
+					<button id="add" class="form-button" onclick="addItem()">Add Item</button>
+					<button id="new" class="form-button" onclick="newOrder()">New Order</button>
+				</div>
+			</div>
+			<div class="store-products">
+				<!--
+				<table class="table-content" cellspacing="0">
+					<caption>Products</caption>
+					<thead>
+						<th>ID</th>
+						<th>Product</th>
+						<th>Price</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>Smart Light Bulb</td>
+							<td>$9.00</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>USB Keyboard</td>
+							<td>$9.00</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>Wireless Keyboard</td>
+							<td>$13.00</td>
+						</tr>
+
+						<tr>
+							<td>4</td>
+							<td>Webcam</td>
+							<td>$22.00</td>
+						</tr>
+						<tr>
+							<td>5</td>
+							<td>Mechanical Keyboard</td>
+							<td>$55.00</td>
+						</tr>
+						<tr>
+							<td>6</td>
+							<td>Portable SSD</td>
+							<td>$55.00</td>
+						</tr>
+						<tr>
+							<td>7</td>
+							<td>Laptop</td>
+							<td>$540.00</td>
+						</tr>
+						<tr>
+							<td>8</td>
+							<td>Desktop</td>
+							<td>$650.00</td>
+						</tr>
+						<tr>
+							<td>9</td>
+							<td>Monitor</td>
+							<td>$150.00</td>
+						</tr>
+					</tbody>
+				</table> -->
+			</div>
+			<div class="store-order-invoice-total">
+				<h2 id="invoice">Invoice Total: $<strong id="total">0.00</strong></h2>
+			</div>
+		</div>
+		<div class="store-order-receipt">
+			<textarea id="receipt" readonly></textarea>
+		</div>
+	</body>
+</html>
