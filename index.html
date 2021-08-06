@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Index</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="styles/mainstyles.css">
+		<link rel="stylesheet" type="text/css" href="styles/navbar.css">
+		<link rel="stylesheet" type="text/css" href="styles/styleoverride.css">
+		<script type="text/javascript" src="scripts/script.js"></script>
+
+	</head>
+	<body>
+		<!-- Start Page Header -->
+		<div class="page-head">
+			<header>
+				<a class="navbar-header selected" href="index.html">Home</a>
+				<a class="navbar-header" href="aboutme.html">About Me</a>
+				<div class="navbar-dropdown">
+					<a class="navbar-header" href="allprojects.html">Projects</a>
+					<div class="navbar-dropdown-content">
+						<a href="allprojects.html" class="navbar-link">All Projects</a>
+						<a href="allprojects.html#htmlcss" class="navbar-link">HTML/CSS Projects</a>
+						<a href="allprojects.html#js" class="navbar-link">JavaScript Projects</a>
+					</div>
+				</div>
+				<a class="navbar-header" href="show-wireframes.html">Wireframes</a>
+			</header>
+		</div>
+		<!-- End Page Header -->
+		<div class="page-body">
+			<div class="main-content">
+				<div class="holding-box part">
+					<div class="interactive-scroll-image" id="section1">
+						<div class="interactive-scroll-image-1">
+							<h1 id="name-prof">Vincent Hsiao</h1>
+							<h2>Developer, Student, Traveller</h2>
+						</div>
+					</div>
+	            </div>
+	            <div class="part">
+	            	<h1>What can I do?</h1>
+	            	<div class="horiz-box" id="services">
+	            		<div class="box-holdingbox">
+	            			<h1>HTML</h1>
+	            			<h2>I know and can make websites and website frames with HTML.</h2>
+	            		</div>
+	            		<div class="box-holdingbox">
+	            			<h1>CSS</h1>
+	            			<h2>I can use CSS to customize regular HTML websites to look better, and I can make them more modern and nice. I know how to use new technologies like Flexbox and Gridding</h2>
+	            		</div>
+	            		<div class="box-holdingbox">
+	            			<h1>Javascript</h1>
+	            			<h2>I can add functionality, call external APIS, create nicer forms and make interactive websites with Javascript.</h2>
+	            		</div>
+	            	</div>
+	            	<a href="../projects/allprojects.html" id="see-all-about-me">More about me &rarr;</a>
+	            </div>
+	            <div class="holding-box part half-size">
+					<div class="interactive-scroll-image" id="section2">
+						<div class="interactive-scroll-image-1">
+							<h1>Skilled and Easily Adaptable</h1>
+							<h2>I can write good, efficiently, working code.</h2>
+							
+						</div>
+					</div>
+				</div>
+				<div class="part">
+					<h1>Some of my projects..</h1>
+					<div class="horiz-box" id="projects">
+						<div class="box-holdingbox" onclick="goThere('../projects/allprojects.html')">
+	            			<h1>Random Quote Picker</h1>
+	            			<h2>In this project, you can select a category and a number of quotes, and the program will go fetch the quotes for you with a third party API.</h2>
+	            			<h3>Javascript, AJAX</h3>
+	            		</div>
+	            		<div class="box-holdingbox" onclick="goThere('../projects/project1.html')">
+	            			<h1>Simple Online Store</h1>
+	            			<h2>A simple store, with ordering features, clearing, automatic price calculation, a auto-expanding receipt, and a dynamic table that expands whenever an new item is added to the inventory.</h2>
+	            			<h3>HTML, CSS, Javascript</h3>
+	            		</div>
+	            		<div class="box-holdingbox" onclick="goThere('../projects/allprojects.html')">
+	            			<h1>BMI Calculator</h1>
+	            			<h2>With this program, you can enter in your weight and height, and the calculator will calculate your BMI based on the formula and give you the category you will fall in.</h2>
+	            			<h3>Javascript, CSS</h3>
+	            		</div>
+					</div>
+					<a href="../aboutme/aboutme.html" id="see-all">See all my projects &rarr;</a>
+				</div>
+				<div class="part holding-box">
+					<div class="interactive-scroll-image" id="section3">
+						<div class="interactive-scroll-image-1">
+							<h1>Get in touch</h1>
+							<form class="contact-form" action="mailto:vincenthsiao@my.smccd.edu">
+								<div class="form-group">
+									<label for="name" class="required">Name</label>
+									<input class="text-input" id="name" type="text" required>
+								</div>
+								<div class="form-group">
+									<label for="email" class="required">Email</label>
+									<input class="text-input" id="email" type="text" required>
+								</div>
+								<div class="form-group">
+									<label for="message" class="required">Message</label>
+									<textarea class="text-input" id="message" rows="10" cols="50" required></textarea>
+								</div>
+								<button type="submit">Submit</button>
+							</form>
+						</div>
+					</div>
+				</div>
+				<a href="#" id="up-button">△</a>
+	        </div>
+		</div>
+	</body>
+</html>

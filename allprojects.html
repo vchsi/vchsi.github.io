@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Projects</title>
+		<link rel="stylesheet" type="text/css" href="styles/mainstyles.css">
+		<link rel="stylesheet" type="text/css" href="styles/main-projectpagestyling.css">
+		<link rel="stylesheet" type="text/css" href="styles/navbar.css">
+		<link rel="stylesheet" type="text/css" href="styles/tablestyling.css">
+		<script type="text/javascript" src="script/projpagescript.js"></script>
+
+	</head>
+	<body>
+		<!-- Start Page Header -->
+		<div class="page-head">
+			<header>
+				<a class="navbar-header" href="index.html">Home</a>
+				<a class="navbar-header" href="aboutme.html">About Me</a>
+				<div class="navbar-dropdown">
+					<a class="navbar-header selected" href="allprojects.html">Projects</a>
+					<div class="navbar-dropdown-content">
+						<a href="allprojects.html" class="navbar-link">All Projects</a>
+						<a href="allprojects.html#htmlcss" class="navbar-link">HTML/CSS Projects</a>
+						<a href="allprojects.html#js" class="navbar-link">JavaScript Projects</a>
+					</div>
+				</div>
+				<a class="navbar-header" href="show-wireframes.html">Wireframes</a>
+			</header>
+		</div>
+		<!-- End Page Header -->
+		<div class="page-body">
+			<div class="side-menu-bar-flex">
+				<div class="side-menu-bar-fixed">
+					<h1 id="menu-bar-title">Chapters</h1>
+					<a href="#htmlcssprojects" class="menu-link">HTML/CSS Projects</a>
+					<a href="#jsprojects" class="menu-link">JS Projects</a>
+				</div>
+			</div>
+			<div class="main-content">
+				<details id="htmlcssprojects" class="projcat">
+					<summary>HTML/CSS Projects</summary>
+					<table class="table-content" cellspacing="0">
+						<thead>
+							<th>Project Name</th>
+							<th>Project Description</th>
+							<th>Project Link</th>
+						</thead>
+						<tbody>
+							<tr>
+								<td>My Store</td>
+								<td>Create a simple online store with HTML/CSS and Javascript</td>
+								<td><a href="project1.html">Click Here</a></td>
+							</tr>
+							<tr>
+								<td>BMI Calculator</td>
+								<td>Given the weight and height, this program calculates your BMI and automatically places you in a category.</td>
+								<td><a href="project2.html">Click Here</a></td>
+							</tr>
+							<tr>
+								<td>Flexbox Recipes Page</td>
+								<td>Position a already created recipes page with HTML flexboxes instead of floats</td>
+								<td><a href="project3.html">Click Here</a></td>
+							</tr>
+						</tbody>
+					</table>
+				</details>
+				<details id="jsprojects" class="projcat">
+					<summary>Javascript Projects</summary>
+					<table class="table-content" cellspacing="0">
+						<thead>
+							<th>Project Name</th>
+							<th>Project Description</th>
+							<th>Project Link</th>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Shipping Cost Calculator</td>
+								<td>Enter in a weight and when the submit button is pressed, the program will automatically apply prices and calculate the total cost.</td>
+								<td><a href="project4.html">Click Here</a></td>
+							</tr>
+							<tr>
+								<td>Order Calculator with discount</td>
+								<td>Enter in a product price and quantity and it will automatically try to find a discount from the defined chart, and if a discount is found, it will apply it.</td>
+								<td><a href="project5.html">Click Here</a></td>
+							</tr>
+							<tr>
+								<td>Quote Picker</td>
+								<td>Select a category of quotes and a number of quotes, then the program will go fetch the quotes for you. Program will tell you if the quotes are not found or not.</td>
+								<td><a href="project6.html">Click Here</a></td>
+							</tr>
+						</tbody>
+					</table>
+				</details>
+				
+			</div>
+		</div>
+		<a href="#" id="up-button">△</a>
+	</body>
+</html>
